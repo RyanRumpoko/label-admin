@@ -1,7 +1,7 @@
 import React from "react";
 
 const CardType2 = ({ name, date, total, color }) => {
-  const backgroundColor = `card ${color} p-2`;
+  const backgroundColor = `card ${color} p-2 mb-2`;
   return (
     <div className={backgroundColor}>
       <div className="card-body" style={{ height: "150px" }}>

@@ -2,7 +2,7 @@ import React from "react";
 
 const CardType3 = ({ label }) => {
   return (
-    <div className="card p-2" style={{ height: "100%" }}>
+    <div className="card p-2">
       <div className="card-body">
         <div className="row mb-3">
           <div className="col-12">

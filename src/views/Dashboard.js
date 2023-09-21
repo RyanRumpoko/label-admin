@@ -8,13 +8,13 @@ const Dashboard = () => {
   return (
     <>
       <div className="row justify-content-center my-4 px-4">
-        <div className="col-8">
+        <div className="col-sm-12 col-lg-8 p-2">
           <CardType1
             label="Good Morning, LabelAdmin"
             date="Thursday, 23 February 2023"
           />
         </div>
-        <div className="col-4">
+        <div className="col-sm-12 col-lg-4 p-2">
           <div className="row">
             <div className="col-12 mb-4">
               <CardType2
@@ -36,7 +36,25 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="row justify-content-center mb-4 px-4">
-        <div className="col-6">
+        <div className="col-sm-12 col-lg-3 mb-4">
+          <CardType2
+            name="New Player Register"
+            date="Yesterday, 31.987M"
+            total="12.921"
+            color="bg-warning"
+          />
+          <CardType3 label="Total Deposit" />
+        </div>
+        <div className="col-sm-12 col-lg-3 mb-4">
+          <CardType2
+            name="Active User"
+            date="Yesterday, 31.987M"
+            total="3.921"
+            color="bg-info"
+          />
+          <CardType3 label="Total Deposit" />
+        </div>
+        {/* <div className="col-sm-12 col-lg-6">
           <div className="row mb-4">
             <div className="col-6">
               <CardType2
@@ -55,7 +73,7 @@ const Dashboard = () => {
               />
             </div>
           </div>
-          <div className="row">
+          <div className="row mb-4">
             <div className="col-6">
               <CardType3 label="Total Deposit" />
             </div>
@@ -63,8 +81,8 @@ const Dashboard = () => {
               <CardType3 label="Total Withdraw" />
             </div>
           </div>
-        </div>
-        <div className="col-3">
+        </div> */}
+        <div className="col-sm-12 col-lg-3 mb-4">
           <CardType4
             name="Livegame"
             icon="fas fa-star-of-life text-primary"
@@ -79,7 +97,7 @@ const Dashboard = () => {
             inc3="120"
           />
         </div>
-        <div className="col-3">
+        <div className="col-sm-12 col-lg-3 mb-4">
           <CardType4
             name="Lottery"
             icon="fas fa-life-ring text-primary"
